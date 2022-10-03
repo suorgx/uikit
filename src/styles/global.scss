@@ -1,43 +1,54 @@
 :root {
-  --primary: #9E77ED;
-  --primary-hover: #B692F6;
-  --second: #6172F3;
-  --second-hover: #8098F9;
-  --success: #12B76A;
-  --success-hover: #32D583;
-  --info: #2E90FA;
-  --info-hover: #53B1FD;
-  --error: #F04438;
-  --error-hover: #F97066;
-  --warning: #F79009;
-  --warning-hover: #FDB022;
+    --primary: #9E77ED;
+    --primary-hover: #B692F6;
+    --second: #6172F3;
+    --second-hover: #8098F9;
+    --success: #12B76A;
+    --success-hover: #32D583;
+    --info: #2E90FA;
+    --info-hover: #53B1FD;
+    --error: #F04438;
+    --error-hover: #F97066;
+    --warning: #F79009;
+    --warning-hover: #FDB022;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  color: var(--primary);
-  text-decoration: none;
+    color: var(--primary);
+    text-decoration: none;
 }
 
 body {
-  background: #fafafa;
+    background: #fafafa;
 }
 
 h2 {
-  margin-bottom: 12px;
-  font-weight: 500;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 
 h3 {
-  margin-bottom: 10px;
-  font-weight: 500;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+
+    &__block {
+        display: block;
+    }
 }
 
 .mr {
-  margin-right: 7px;
+    margin-right: 7px;
 }
