@@ -13,7 +13,7 @@ const toggleBar = () => isActiveBar.value = !isActiveBar.value
 </script>
 
 <template>
-    <div :class="['sidebar', {sidebar_active: isActiveBar}]">
+    <div :class="['sidebar', {sidebar__active: isActiveBar}]">
         <router-link
             class="sidebar__link"
             v-for="link in links"
@@ -41,7 +41,7 @@ const toggleBar = () => isActiveBar.value = !isActiveBar.value
     transform: translateX(-230px);
     z-index: 0;
 
-    &_active {
+    &__active {
         transform: translateX(0);
     }
 

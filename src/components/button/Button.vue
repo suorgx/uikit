@@ -39,7 +39,7 @@ const clickOnButton = () => {
 
 <template>
     <button
-        :class="['btn', `btn_${color}`,
+        :class="['btn', `btn__${color}`,
         {'btn_rounded': rounded},
         {'btn_outlined': outlined},
         {'btn_icon': icon},
@@ -49,9 +49,9 @@ const clickOnButton = () => {
         {'btn_x-small': size === 'x-small'}]"
         :disabled="disabled"
         @click="clickOnButton">
-    <span v-if="icon">
-      <font-awesome-icon :icon="`fa-regular fa-${icon}`"/>
-    </span>
+        <span v-if="icon">
+          <font-awesome-icon :icon="`fa-regular fa-${icon}`"/>
+        </span>
         <span v-else>{{ label }}</span>
     </button>
 </template>
@@ -67,7 +67,7 @@ const clickOnButton = () => {
     font-size: 15px;
     transition: 0.2s;
 
-    &_primary {
+    &__primary {
         background: var(--primary);
         border-color: var(--primary);
 
@@ -77,7 +77,7 @@ const clickOnButton = () => {
         }
     }
 
-    &_second {
+    &__second {
         background: var(--second);
         border-color: var(--second);
 
@@ -87,7 +87,7 @@ const clickOnButton = () => {
         }
     }
 
-    &_success {
+    &__success {
         background: var(--success);
         border-color: var(--success);
 
@@ -97,7 +97,7 @@ const clickOnButton = () => {
         }
     }
 
-    &_info {
+    &__info {
         background: var(--info);
         border-color: var(--info);
 
@@ -107,7 +107,7 @@ const clickOnButton = () => {
         }
     }
 
-    &_error {
+    &__error {
         background: var(--error);
         border-color: var(--error);
 
@@ -117,7 +117,7 @@ const clickOnButton = () => {
         }
     }
 
-    &_warning {
+    &__warning {
         background: var(--warning);
         border-color: var(--warning);
 
