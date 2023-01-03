@@ -3,6 +3,7 @@ import Index from '@/views/Index.vue'
 import Button from '@/views/Button.vue'
 import Typography from '@/views/Typography.vue'
 import Checkbox from '@/views/Checkbox.vue'
+import Switch from '@/views/Switch.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -21,10 +22,16 @@ const router = createRouter({
             path: '/typography',
             name: 'Typography',
             component: Typography
-        },{
+        },
+        {
             path: '/checkbox',
             name: 'Checkbox',
             component: Checkbox
+        },
+        {
+            path: '/switch',
+            name: 'Switch',
+            component: Switch
         },
     ]
 })

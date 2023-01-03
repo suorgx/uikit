@@ -5,6 +5,7 @@ const links = ref([
     {name: 'Typography', href: '/typography'},
     {name: 'Button', href: '/button'},
     {name: 'Checkbox', href: '/checkbox'},
+    {name: 'Switch', href: '/switch'},
 ])
 
 const isActiveBar = ref(true)

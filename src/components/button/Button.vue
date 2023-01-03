@@ -40,13 +40,13 @@ const clickOnButton = () => {
 <template>
     <button
         :class="['btn', `btn__${color}`,
-        {'btn_rounded': rounded},
-        {'btn_outlined': outlined},
-        {'btn_icon': icon},
-        {'btn_large': size === 'large'},
-        {'btn_x-large': size === 'x-large'},
-        {'btn_small': size === 'small'},
-        {'btn_x-small': size === 'x-small'}]"
+        {'btn__rounded': rounded},
+        {'btn__outlined': outlined},
+        {'btn__icon': icon},
+        {'btn__large': size === 'large'},
+        {'btn__x-large': size === 'x-large'},
+        {'btn__small': size === 'small'},
+        {'btn__x-small': size === 'x-small'}]"
         :disabled="disabled"
         @click="clickOnButton">
         <span v-if="icon">
@@ -127,7 +127,7 @@ const clickOnButton = () => {
         }
     }
 
-    &_rounded {
+    &__rounded {
         border-radius: 18px;
     }
 
@@ -136,7 +136,7 @@ const clickOnButton = () => {
         cursor: default;
     }
 
-    &_outlined {
+    &__outlined {
         background: transparent;
         color: #111;
 
@@ -145,31 +145,31 @@ const clickOnButton = () => {
         }
     }
 
-    &_icon {
+    &__icon {
         border-radius: 50%;
         width: 60px;
         height: 60px;
     }
 
-    &_large {
+    &__large {
         font-size: 22px;
         padding: 10px 22px;
         height: fit-content;
     }
 
-    &_x-large {
+    &__x-large {
         font-size: 25px;
         padding: 11px 25px;
         height: fit-content;
     }
 
-    &_small {
+    &__small {
         font-size: 14px;
         padding: 9px 14px;
         height: fit-content;
     }
 
-    &_x-small {
+    &__x-small {
         font-size: 11px;
         padding: 8px 11px;
         height: fit-content;
